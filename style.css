@@ -11,31 +11,20 @@ body {
 
 .navbar {
     display: flex;
-    justify-content:space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #fafaec;
-}
-
-.navbar {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: #fafaec;
-    height: 100px;
-    width: 100%;
 }
 
-
 .left-corner {
-    flex: 1;
+    flex: 0 0 20%; 
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .right-corner {
-    flex: 2;
+    flex: 0 0 80%;
     display: flex;
     justify-content: flex-end;
 }
@@ -57,7 +46,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-size: 1 em;
+    font-size: 1.2em;
     transition: color 0.3s;
 }
 
@@ -72,39 +61,44 @@ nav ul li a:hover {
     color: white;
 }
 
-
 img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
-/* Za vrlo mali ekran, poput telefona u portretnom režimu */
-@media (max-width: 480px) {
+
+h1 {
+    margin-top: 20px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
     .navbar {
-        padding: 5px 10px;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
     }
 
-    .navbar .logo {
-        height: 40px;
+    .left-corner, .right-corner {
+        flex: 0 0 100%;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
     }
 
     nav ul li a {
         font-size: 1em;
-    }
-}
-
-@media (max-width: 768px) {
-    .navbar {
-        padding: 10px 15px;
-    }
-
-    .navbar .logo {
-        height: 50px; /* Manji logo za mobilne uređaje */
-    }
-
-    nav ul li a {
-        font-size: 0.9em;
     }
 
     .header {
@@ -113,29 +107,7 @@ img {
 }
 
 @media (max-width: 480px) {
-    .navbar {
-        padding: 5px 10px;
-    }
-
-    .navbar .logo {
-        height: 40px;
-    }
-
-    nav ul {
-        flex-direction: column; /* Navigacija u vertikalnom smjeru */
-        align-items: center;
-    }
-
-    nav ul li {
-        margin-left: 0;
-        margin-bottom: 10px; /* Razmak između linkova */
-    }
-
-    .header {
-        padding: 15px;
-    }
-
-    nav ul li a {
-        font-size: 1.1em;
+    h1 {
+        font-size: 1.5em;
     }
 }
