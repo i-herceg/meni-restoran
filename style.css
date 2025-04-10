@@ -1,29 +1,73 @@
-body {
-    font-family: sans-serif;
-    padding: 20px;
-    background-color: #fff8f0;
-    color: #333;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  .menu-section {
-    margin-bottom: 30px;
-  }
-  
-  .menu-section h2 {
-    color: #c94c4c;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  ul {
-    list-style: none;
+* {
+    margin: 0;
     padding: 0;
-  }
-  
-  li {
-    padding: 5px 0;
-  }
-  
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fafaec;
+}
+
+.navbar {
+    height: 100px;
+    width: auto;
+}
+
+.left-corner {
+    flex: 0 0 20%; /* 30% širine za left-corner */
+    display: flex;
+    justify-content: center;
+}
+
+.right-corner {
+    flex: 0 0 80%; /* 70% širine za right-corner */
+    display: flex;
+    justify-content:flex-end;
+}
+.logo {
+    height: 80px;
+    width: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1 em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #7b602a;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #7b602a;
+    color: white;
+}
+
+
+.header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
