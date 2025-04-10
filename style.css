@@ -66,8 +66,23 @@ nav ul li a:hover {
 }
 
 
-.header img {
+img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+/* Za vrlo mali ekran, poput telefona u portretnom režimu */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px 10px;
+    }
+
+    .navbar .logo {
+        height: 40px;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
 }
