@@ -1,0 +1,29 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #fff8f0;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .menu-section {
+    margin-bottom: 30px;
+  }
+  
+  .menu-section h2 {
+    color: #c94c4c;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 5px 0;
+  }
+  
